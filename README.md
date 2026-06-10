@@ -52,3 +52,7 @@ Work in progress. The app was developed iteratively up to v6 and is a functional
 ## Notes
 
 The UI is in German (CH/EU audience). Code, comments, and data labels are predominantly German.
+
+## Screenshots
+
+![Electricity audit dashboard](screenshots/demo.png)
