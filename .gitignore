@@ -1,0 +1,42 @@
+# OS files
+.DS_Store
+**/.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Python (not used, kept for safety)
+.venv/
+venv/
+**/__pycache__/
+*.pyc
+
+# Build output
+dist/
+build/
+
+# Editors / IDEs
+.vscode/
+.idea/
+
+# Environment / secrets
+.env
+.env.local
+**/.env
+
+# Apple / Xcode
+*.swiftpm
+DerivedData/
+
+# Vite
+.vite/
+
+# Old nested project iterations
+strom-rechner-v2/
+strom-rechner-v4/
+strom-rechner-v5/
