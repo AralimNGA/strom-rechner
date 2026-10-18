@@ -4,7 +4,7 @@
 
 A React single-page app for modeling a household's electricity use. Users describe their household (country, number of people, dwelling type, appliances, PC/gaming rig, solar PV, tariff) and get back estimated consumption, costs, a CO₂ footprint, an efficiency score, tailored optimization suggestions, and a multi-page PDF audit report. All calculations run client-side — there is no backend.
 
-The data model is built around Swiss and EU reference figures (ElCom tariffs, BFE/BFS statistics, IPCC AR6, EU-ETS, appliance values from topten.ch / energy-label.eu) and every figure in the database carries a documented source.
+The data model is built around Swiss and EU reference figures (ElCom tariffs, BFE/BFS statistics, IPCC AR6, EU-ETS). The app names its sources next to the price history and the macroeconomic figures, and the PDF report ends with a source index. Appliance values are typical figures based on EU energy labels, manufacturer data sheets and comparison sites such as topten.ch / energy-label.eu; the individual appliance entries do not cite a source of their own.
 
 ## Features
 
