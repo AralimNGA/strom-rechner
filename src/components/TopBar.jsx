@@ -5,8 +5,9 @@ import CountryPicker from './CountryPicker.jsx';
 export default function TopBar({ theme, onThemeToggle, countryId, onCountryChange, providers, sources, tick, country }) {
   return (
     <>
-      {/* Ticker */}
+      {/* Ticker (simulated prices, not real tariffs) */}
       <div
+        title="Preise und Trends werden zufällig simuliert, keine echten Tarife oder Echtzeitdaten"
         style={{
           background: 'var(--surface)',
           borderBottom: '1px solid var(--divider)',
@@ -15,8 +16,26 @@ export default function TopBar({ theme, onThemeToggle, countryId, onCountryChang
           fontFamily: 'JetBrains Mono, monospace',
           fontSize: 11,
           color: 'var(--text-dim)',
+          display: 'flex',
+          alignItems: 'center',
         }}
       >
+        <span
+          style={{
+            flexShrink: 0,
+            position: 'relative',
+            zIndex: 1,
+            padding: '0 14px',
+            background: 'var(--surface)',
+            borderRight: '1px solid var(--divider)',
+            color: 'var(--text)',
+            letterSpacing: '0.12em',
+            whiteSpace: 'nowrap',
+          }}
+        >
+          SIMULIERT · RICHTWERTE
+        </span>
+        <div style={{ overflow: 'hidden', flex: 1, minWidth: 0 }}>
         <div className="ticker-track">
           {[...providers, ...sources, ...providers, ...sources].map((item, i) => {
             const isProvider = 'region' in item;
@@ -40,6 +59,7 @@ export default function TopBar({ theme, onThemeToggle, countryId, onCountryChang
               </span>
             );
           })}
+        </div>
         </div>
       </div>
 
@@ -109,7 +129,7 @@ export default function TopBar({ theme, onThemeToggle, countryId, onCountryChang
               letterSpacing: '0.1em',
             }}
           >
-            <span className="live-dot"></span>
+            <span className="sim-dot"></span>
             <span title="Marktpreise werden zufällig simuliert, keine Echtzeitdaten">
               SIMULIERT — {tick.toLocaleTimeString('de-CH')}
             </span>

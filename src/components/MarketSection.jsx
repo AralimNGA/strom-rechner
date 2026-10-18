@@ -21,7 +21,7 @@ export default function MarketSection({ providers, sources, selectedProvider, se
             gap: 6,
           }}
         >
-          <span className="live-dot"></span> {country.flag} SIMULATION
+          <span className="sim-dot"></span> {country.flag} SIMULATION
         </div>
       </div>
 
