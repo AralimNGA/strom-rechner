@@ -13,7 +13,7 @@ The data model is built around Swiss and EU reference figures (ElCom tariffs, BF
 - **PC / gaming calculator** — CPU & GPU picker with idle/light/heavy usage patterns, plus fallback profiles (Office / Gaming / High-End)
 - **Solar / PV simulation** — self-consumption, grid feed-in, battery, payback period, and yield per kWp by country
 - **HT/NT tariff calculator** — high/low-tariff modeling and a 24-hour load-curve visualization by industry
-- **Simulated live market ticker** — provider prices, energy-source prices, and a provider comparison
+- **Simulated market ticker** — provider prices, energy-source prices, and a provider comparison. The prices move randomly around reference values and are labeled "simuliert" in the UI; they are not real-time tariffs of the named providers
 - **Efficiency dashboard** — A–G grade, personalized expected value, and CO₂ balance
 - **Optimization plan** — top-5 energy hogs and a Paris climate-goal check
 - **Scenarios** — save / load / delete via localStorage and export to JSON
@@ -56,3 +56,7 @@ The UI is in German (CH/EU audience). Code, comments, and data labels are predom
 ## Screenshots
 
 ![Electricity audit dashboard](screenshots/demo.png)
+
+## License
+
+MIT, see [LICENSE](LICENSE). npm dependencies keep their own licenses.

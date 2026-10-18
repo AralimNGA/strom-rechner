@@ -110,7 +110,9 @@ export default function TopBar({ theme, onThemeToggle, countryId, onCountryChang
             }}
           >
             <span className="live-dot"></span>
-            <span>LIVE — {tick.toLocaleTimeString('de-CH')}</span>
+            <span title="Marktpreise werden zufällig simuliert, keine Echtzeitdaten">
+              SIMULIERT — {tick.toLocaleTimeString('de-CH')}
+            </span>
           </div>
           <CountryPicker countryId={countryId} onChange={onCountryChange} />
           <ThemeToggle theme={theme} onToggle={onThemeToggle} />

@@ -8,7 +8,7 @@ export default function MarketSection({ providers, sources, selectedProvider, se
     <section id="section-markt" style={{ marginTop: 40 }}>
       <div className="section-bar">
         <span className="section-num">07</span>
-        <h2 className="section-title">STROMMARKT LIVE</h2>
+        <h2 className="section-title">STROMMARKT (SIMULIERT)</h2>
         <div style={{ flex: 1 }}></div>
         <div
           className="mono"
@@ -34,7 +34,7 @@ export default function MarketSection({ providers, sources, selectedProvider, se
           marginBottom: 8,
         }}
       >
-        STROMANBIETER · {country.name.toUpperCase()}
+        STROMANBIETER · {country.name.toUpperCase()} · PREISE SIMULIERT, KEINE ECHTEN TARIFE
       </div>
       <div
         style={{
